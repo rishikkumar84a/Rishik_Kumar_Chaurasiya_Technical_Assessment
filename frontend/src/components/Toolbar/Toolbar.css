@@ -1,0 +1,71 @@
+.toolbar {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.toolbar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.section-title {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #888;
+  font-weight: 600;
+  padding-left: 4px;
+}
+
+.toolbar-items {
+  display: flex;
+  gap: 8px;
+}
+
+.toolbar-separator {
+  width: 1px;
+  height: 30px;
+  background: #eee;
+}
+
+.draggable-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: #f8f9fa;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  cursor: grab;
+  transition: all 0.2s;
+  gap: 4px;
+}
+
+.draggable-node:hover {
+  background: #fff;
+  border-color: #646cff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(100, 108, 255, 0.15);
+}
+
+.draggable-node .icon {
+  font-size: 20px;
+}
+
+.draggable-node .label {
+  font-size: 10px;
+  color: #555;
+  font-weight: 500;
+}
